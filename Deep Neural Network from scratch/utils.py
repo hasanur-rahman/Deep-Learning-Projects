@@ -15,6 +15,7 @@ def relu_backward(dA, Z):
     assert(dZ.shape == Z.shape)
     return dZ
 
+
 def sigmoid_backward(dA, Z):
     s = 1 / (1 + np.exp(-Z))
     dZ = dA * s * (1 - s)
